@@ -126,7 +126,7 @@ let timeLeft=7,timer=null,answered=false;
 const $=id=>document.getElementById(id);
 $("year").textContent=new Date().getFullYear();
 
-function startSelectedQuiz(){
+async function startSelectedQuiz(){
   const category=$("category").value;
   quizQuestions=questions.filter(q=>category==="all"||q.category===category);
 
